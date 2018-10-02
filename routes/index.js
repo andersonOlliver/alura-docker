@@ -19,6 +19,12 @@ router.get('/', (req, res) => {
     }
 })
 
+router.get('/remove', (req, res) =>{
+    Book.remove({}, () => {
+        console.log("Excluídos com sucesso")
+    });  
+    res.send("Livros salvos");
+});
 
 // Seed nos arquivos
 router.get('/seed', (req,res) => {
