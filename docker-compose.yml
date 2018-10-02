@@ -1,0 +1,28 @@
+version: '3'
+services:
+ nginx:
+  build:
+   dockerfile: ./docker/nginx.dockerfile
+   context: .
+  image: olliver/nginx
+  container_name: nginx
+  ports:
+   - "80:80"
+  networks:
+   - production-network
+
+ mongodb:
+  image: mongo
+  networks:
+   - production-network
+
+ node1:
+  build:
+   dockerfile: ./docker/alura-books.dockerfile
+   context: .
+  image: 
+
+networks:
+ production-network:
+  driver: bridge
+
