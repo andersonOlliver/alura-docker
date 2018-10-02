@@ -23,7 +23,7 @@ router.get('/remove', (req, res) =>{
     Book.remove({}, () => {
         console.log("Excluídos com sucesso")
     });  
-    res.send("Livros salvos");
+    res.send("Todos livros apagados");
 });
 
 // Seed nos arquivos
