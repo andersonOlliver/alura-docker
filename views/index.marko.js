@@ -32,7 +32,7 @@ function render(input, out) {
       "</p><p><a href=\"#\" class=\"btn btn-primary\">Comprar!</a><a href=\"#\" class=\"btn btn-default\">Detalhes</a></p></div></div></div>");
   });
 
-  out.w(" </div> </div><footer class=\"site-footer\"><p>Todos os direitos reservados</p></footer>");
+  out.w(" </div> </div><footer class=\"site-footer\"><p>Código fonte extraido dos cursos online da <a href=\"https://cursos.alura.com.br/course/docker-e-docker-compose\">Alura</a></p></footer>");
 
   init_components_tag({}, out);
 
